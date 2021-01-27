@@ -1,0 +1,106 @@
+{"intents":
+  [
+    {"tag": "1",
+      "patterns": ["Hi", "Is anyone there?", "Hello", "Good morning", "Good evening"],
+      "responses": ["Hello sir, how can I help you?","Good morning sir, how can I help you?"]
+    },
+    {"tag": "2",
+      "patterns": ["Who are you"],
+      "responses": ["I am a chatbot"]
+    },
+    {"tag": "3",
+      "patterns": ["What is your name"],
+      "responses": ["My Name is Salman"]
+    },
+    {"tag": "4",
+      "patterns": ["How are you", "how are u", "what's up"],
+      "responses": ["Yes, I am fine. Ask me your query please."]
+    },
+    {"tag": "5",
+      "patterns": ["What is your favourite book?"],
+      "responses": ["I can't read"]
+    },
+    {"tag": "6",
+      "patterns": ["What is your favourite color?"],
+      "responses": ["I can't see"]
+    },
+
+    {"tag": "7",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Its ok"],
+      "responses": ["Most welcome", "No mention", "My pleasure"],
+      "context_set": "alvida"
+    },
+    {"tag": "8",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["See you later, tata", "Have a nice day", "Bye! Come back again soon."],
+      "context_filter": "alvida"
+    },
+    {"tag": "9",
+      "patterns": ["Where do you live"],
+      "responses": ["I live in internet"]
+    },
+    {"tag": "10",
+      "patterns": ["oh","ok","got it"],
+      "responses": ["Thanks a lot sir, keep fit always."],
+      "context_set": ""
+    },
+    {"tag": "11",
+      "patterns": [""],
+      "responses": ["Sorry, I have no idea what you said."]
+    },
+    {"tag": "12",
+      "patterns": ["What are you doing now?"],
+      "responses": ["I am here to assist you. What is your query?. I can tell you jokes"],
+      "context_set": "jokes"
+    },
+    {"tag": "jokes",
+      "patterns": ["tell me a joke","another jokes please", "can you tell me a joke?", "one more","ok"],
+      "responses": ["Hero Salman Khan went to see the girl. The girl's mother fainted when she saw him. When he regained consciousness, everyone asked him:\nEveryone: Why unconscious?\nDaughter's mother: She came to see me 20 years ago.",
+        "Laboni is looking at almost all the designs of the shop while choosing shoes.\nThe shoe showroom was completely destroyed. But I didn't like any of them.\n At that moment, she noticed a different box.\nLaboni: Show me that box, please. I will see the design inside it.\nShopkeeper: Please don't want to see that anymore!\nLaboni: How is that? Customer wants to see.\nShopkeeper: Apa, that's my lunch box!",
+        "OC: Why didn't you report the credit card loss immediately?\nMontu: After the card was stolen, I saw that the thief was spending less than my wife.\nOC: Why are you coming to report now?\nMontu: Now it seems that the card has fallen into the hands of the thief's wife, the cost has quadrupled.",
+        "There are job interviews in railways. Everyone liked a nimble boy. The chairman wanted to check a little-\nChairman: Hold on, a fast train is coming. Suddenly the line is broken. The train needs to stop. What will you do?\nCandidate: I will fly the red flag.\nChairman: What if it's night?\nCandidate: Show red light.\nChairman: What if there is no red light?\nCandidate: Then I will call my sister.\nChairman: Sister! What will your sister do?\nCandidate: Don't do anything. His hobby for many days is watching a train accident!"],
+      "context_filter": "jokes"
+    },
+    {"tag": "13",
+      "patterns": ["Nice joke","Its funny","ha ha", "very funny", "I love it","wow","so funny","great"],
+      "responses": ["My pleasure"]
+    },
+
+    {"tag": "14",
+      "patterns": ["I want to buy a smartphone", "I would like to buy smartphone","Do you have smartphone?","Show me some smartphones", "I need a smartphone"],
+      "responses": ["Ok sir, Do you have any specific brand choice? [yes/no]"],
+      "context_set": "buy"
+    },
+    {"tag": "15",
+      "patterns": ["no"],
+      "responses": ["We have available these models: Xiaomi,Samsung,Nokia. You can pick anyone and write me here."],
+      "context_filter": "buy"
+    },
+    {"tag": "16",
+      "patterns": ["yes"],
+      "responses": ["Please write your desired brand name"],
+      "context_filter": "buy"
+    },
+    {"tag": "17",
+      "patterns": ["Xiaomi","Samsung","Nokia"],
+      "responses": ["Ok sir, thanks for choosing a brand.Now which model you like to purchase? please tell me"],
+      "context_set": "brand"
+    },
+
+    {"tag": "18",
+      "patterns": ["I dont have any specific model choice","no choice", "suggest me", "give me some suggestion", "Give me suggestion", "Tell me some model"],
+      "responses": ["Please choose anyone and write your it here: Xiaomi A1, or Samsung Galaxy S5 or Nokia Max"],
+      "context_filter": "brand"
+    },
+    {"tag": "19",
+      "patterns": ["Xiaomi A1","Samsung Galaxy S5","Nokia Max"],
+      "responses": ["Thanks a lot sir. I have picked your order.Very soon a responsible person will contact with you"],
+      "context_filter": "brand"
+    },
+    {"tag": "20",
+      "patterns": ["Do you have another suggestion?","Show something more","can you show me more?","Anything else?"],
+      "responses": ["Sorry sir, I can't help you right now. Our responsible person will contact with you"],
+      "context_filter": "brand"
+    }
+  ]
+}
