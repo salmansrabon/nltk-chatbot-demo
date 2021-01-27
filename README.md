@@ -1,16 +1,16 @@
-#Prerequisite:
+# Prerequisite:
 
-##Create virtual environment as venv
+## Create virtual environment as venv
 ```
 python -m venv venv
 ```
-##Activate venv
+## Activate venv
 source mypython/bin/activate
 
-##Install all packages
+## Install all packages
 ```
 pip install -r r.txt
 ```
 
-##Select chatting.py and execute
+## Select chatting.py and execute
 
