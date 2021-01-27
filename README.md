@@ -1,4 +1,5 @@
 # Prerequisite:
+- Python 3.8
 
 ## Create virtual environment as venv
 ```
